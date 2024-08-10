@@ -10,98 +10,95 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="logo" width="50" height="50">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header role="banner">
+        <nav class="navbar navbar-expand-md" style="background-color:#e8bbbd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="images/logo.png" alt="logo" width="50" height="50">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Contact</a>
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
                         </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <section id="hero">
-            <div class="container"> 
-                <div>
-                    <img src="images/hero-130_x_195.jpg" class="" alt="img of designer">
-                </div>
-                <div class="d-felx justify-content-center aligh-items-center">
-                    <div class="text-black ">
-                    <h1 class="display-1">Meet Florence, a passionate designer.</h1>
-                    <p class="lead">Specialization of Florence's work:
-                        <ul>
-                            <li>Graphic design</li>
-                            <li>UX design</li>
-                            <li>Web development</li>
-                            <li>Photography</li>
-                        </ul>
-                        </p>
-                    <button class="btn-primary" type="button">Call to action</button>
+    <main id="main-content">
+        <section id="hero" role="region" aria-labelledby="hero">
+            <div class="container-fluid my-4 py-2" style="background-color:#bcbbda"> 
+                <div class="d-flex flex-column flex-md-row justify-content-center aligh-items-center">
+                    <div class="p-6 text-center">
+                        <picture>
+                            <source media="(max-width:576px)" srcset="images/hero-130_x_195.jpg">
+                            <source media="(min-width:768px)" srcset="images/hero-384_x_576.jpg">
+                            <img src="images/hero-384_x_576.jpg" alt="img of designer">
+                        </picture>
+                    </div>
+                    <div class="p-6 p-5">
+                        <h1 class="display-1" id="hero-title">Meet Florence, a passionate designer.</h1>
+                        <h2 class="lead">Specialization of Florence's work:</h2>
+                            <ul>
+                                <li>Graphic design</li>
+                                <li>UX design</li>
+                                <li>Web development</li>
+                                <li>Photography</li>
+                            </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="cards">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="row">
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="card text-bg-dark">
-                            <img src="images/graphic design-206_x_125.jpg" class="card-img-top" alt="a example img of logo">
+        <section id="cards" role="region">
+            <div class="container-fluid text-center my-4 py-4" style="background-color:#bac58d">
+                <div class="row gap-0">
+                    <div class="col-sm-6 col-lg-3" >
+                        <div class="card" style="background-color: #f0ebc1;">
                             <div class="card-body">
                                 <h3 class="card-title">Graphic Design</h3>
                             </div>
+                            <img src="images/graphic-design-206_x_125.jpg" class="card-img-bottom" alt="img of logo">
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-sm-6 col-lg-3">
-                        <div class="card text-bg-dark">
-                            <img src="images/ux-206_x_133.jpg" class="card-img-top" alt="a example img of brochure">
+                        <div class="card" style="background-color: #f0ebc1;">
                             <div class="card-body">
                                 <h3 class="card-title">UX Design</h3>
                             </div>
+                            <img src="images/ux-206_x_133.jpg" class="card-img-bottom" alt="a example img of brochure">
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-sm-6 col-lg-3">
-                        <div class="card text-bg-dark">
-                            <img src="images/ux-206_x_133.jpg" class="card-img-top" alt="a example img of website">
+                        <div class="card" style="background-color: #f0ebc1;">
                             <div class="card-body">
                                 <h3 class="card-title">Web Development</h3>
                             </div>
+                            <img src="images/web-development-206_x_108.jpg" class="card-img-bottom" alt="a example img of website">
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-sm-6 col-lg-3">
-                        <div class="card text-bg-dark">
-                            <img src="images/photography-206_x_137.jpg" class="card-img-top" alt="a example img of photo">
+                        <div class="card" style="background-color: #f0ebc1;">
                             <div class="card-body">
                                 <h3 class="card-title">Photography</h3>
                             </div>
+                            <img src="images/photography-206_x_137.jpg" class="card-img-bottom" alt="a example img of photo">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="bg-dark">
-        <div class="container text-white text-center py-3">
+    <footer role="contentinfo">
+        <div class="container-fluid" style="background-color:#BAC58D;">
             <p>© Copyright 2024 Florence Fu </p>
         </div>
     </footer>
